@@ -47,6 +47,8 @@
 
 
 
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
 <style type="text/css">
@@ -409,25 +411,11 @@ Figure 3.1: Tidy data graphic from <a href="http://r4ds.had.co.nz/tidy-data.html
 <p>You may have been asking yourself what <code>carrier</code> refers to in the <code>glimpse(flights)</code> output above. The <code>airlines</code> dataset provides a description of this with each airline being the observational unit:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(airlines)
 airlines</code></pre></div>
-<pre><code>## # A tibble: 16 × 2
-##    carrier                        name
-##      &lt;chr&gt;                       &lt;chr&gt;
-## 1       9E           Endeavor Air Inc.
-## 2       AA      American Airlines Inc.
-## 3       AS        Alaska Airlines Inc.
-## 4       B6             JetBlue Airways
-## 5       DL        Delta Air Lines Inc.
-## 6       EV    ExpressJet Airlines Inc.
-## 7       F9      Frontier Airlines Inc.
-## 8       FL AirTran Airways Corporation
-## 9       HA      Hawaiian Airlines Inc.
-## 10      MQ                   Envoy Air
-## 11      OO       SkyWest Airlines Inc.
-## 12      UA       United Air Lines Inc.
-## 13      US             US Airways Inc.
-## 14      VX              Virgin America
-## 15      WN      Southwest Airlines Co.
-## 16      YV          Mesa Airlines Inc.</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["carrier"],"name":[1],"type":["chr"],"align":["left"]},{"label":["name"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"9E","2":"Endeavor Air Inc."},{"1":"AA","2":"American Airlines Inc."},{"1":"AS","2":"Alaska Airlines Inc."},{"1":"B6","2":"JetBlue Airways"},{"1":"DL","2":"Delta Air Lines Inc."},{"1":"EV","2":"ExpressJet Airlines Inc."},{"1":"F9","2":"Frontier Airlines Inc."},{"1":"FL","2":"AirTran Airways Corporation"},{"1":"HA","2":"Hawaiian Airlines Inc."},{"1":"MQ","2":"Envoy Air"},{"1":"OO","2":"SkyWest Airlines Inc."},{"1":"UA","2":"United Air Lines Inc."},{"1":"US","2":"US Airways Inc."},{"1":"VX","2":"Virgin America"},{"1":"WN","2":"Southwest Airlines Co."},{"1":"YV","2":"Mesa Airlines Inc."}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[15],"max":[15]},"pages":{}}}
+  </script>
+</div>
 <p>As can be seen here when you just enter the name of an object in R, by default it will print the contents of that object to the screen. Be careful! It’s usually better to use the <code>View()</code> function in RStudio since larger objects may take awhile to print to the screen and it likely won’t be helpful to you to have hundreds of lines outputted.</p>
 <hr />
 <div class="learncheck">
